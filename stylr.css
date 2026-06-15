@@ -1,0 +1,37 @@
+/* Custom Ancient Mechanical Animations */
+
+/* Rotating Sun Wheel / Mandalas as Ancient Gears */
+@keyframes chakraRotateCW {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes chakraRotateCCW {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.animate-chakra-cw {
+    animation: chakraRotateCW 30s linear infinite;
+}
+
+.animate-chakra-ccw {
+    animation: chakraRotateCCW 22s linear infinite;
+}
+
+/* Weight-and-Pulley Mechanical Lever Hover Action */
+.mechanical-lever {
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: 0px 4px 0px #3E2723;
+}
+
+.mechanical-lever:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #B85A32;
+    background-color: rgba(184, 90, 50, 0.05);
+}
+
+/* Traditional Carved Border Trim Mocks */
+.carved-border {
+    border-image: linear-gradient(to right, #B85A32, #D4AF37, #B85A32) 1;
+}
